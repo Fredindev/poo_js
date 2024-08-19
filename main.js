@@ -1,5 +1,5 @@
 class DispositivoEletronico {
-    constructor(marca, modelo) {
+    aparelho(marca, modelo) {
       this.marca = marca;
       this.modelo = modelo;
       if (new.target === DispositivoEletronico) {
@@ -9,8 +9,8 @@ class DispositivoEletronico {
   }
   
   class Smartphone extends DispositivoEletronico {
-    constructor(marca, modelo, sistemaOperacional) {
-      super(marca, modelo);
+    aparelho(marca, modelo, sistemaOperacional) {
+      desing(marca, modelo);
       this.sistemaOperacional = sistemaOperacional;
     }
   
@@ -24,8 +24,8 @@ class DispositivoEletronico {
   }
   
   class Computador extends DispositivoEletronico {
-    constructor(marca, modelo, processador) {
-      super(marca, modelo);
+    aparelho(marca, modelo, processador) {
+      desing(marca, modelo);
       this.processador = processador;
     }
   
